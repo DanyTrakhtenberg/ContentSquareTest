@@ -1,9 +1,9 @@
 import { InstructionEnum } from "./instructionEnum";
 import { DirectionEnum } from "./directionEnum";
-import { OrientationEnum } from "./OrientationEnum";
+import { OrientationEnum } from "./rientationEnum";
 
 
-export class NextDirection {
+export class Direction {
 
     private nextOrientationDictionary: {
         [key in DirectionEnum]: {

@@ -1,8 +1,8 @@
 import { Lawn } from "./lawn";
 import { Coordinates } from "./coordinates";
 import { IOrientationParser } from "./iOrientationParser";
-import { NextDirection } from "./NextDirection";
-import { OrientationEnum } from "./OrientationEnum";
+import { Direction } from "./direction";
+import { OrientationEnum } from "./rientationEnum";
 import { DirectionEnum } from "./directionEnum";
 
 export class Mower {
@@ -11,7 +11,7 @@ export class Mower {
   private directionEnum: DirectionEnum = DirectionEnum.North;
   private position: Coordinates;
 
-  constructor(private lawn: Lawn, private nextDirection: NextDirection, private orientationParser: IOrientationParser) {
+  constructor(private lawn: Lawn, private nextDirection: Direction, private orientationParser: IOrientationParser) {
     this.position = new Coordinates(0, 0);
   }
 

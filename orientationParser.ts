@@ -1,5 +1,5 @@
 import { IOrientationParser } from "./iOrientationParser";
-import { OrientationEnum } from "./OrientationEnum";
+import { OrientationEnum } from "./rientationEnum";
 
 
 

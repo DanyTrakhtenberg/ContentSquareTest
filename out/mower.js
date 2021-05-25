@@ -2,14 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Mower = void 0;
 const coordinates_1 = require("./coordinates");
-const OrientationEnum_1 = require("./OrientationEnum");
+const rientationEnum_1 = require("./rientationEnum");
 const directionEnum_1 = require("./directionEnum");
 class Mower {
     constructor(lawn, nextDirection, orientationParser) {
         this.lawn = lawn;
         this.nextDirection = nextDirection;
         this.orientationParser = orientationParser;
-        this.orientationEnum = OrientationEnum_1.OrientationEnum.Right;
+        this.orientationEnum = rientationEnum_1.OrientationEnum.Right;
         this.directionEnum = directionEnum_1.DirectionEnum.North;
         this.position = new coordinates_1.Coordinates(0, 0);
     }

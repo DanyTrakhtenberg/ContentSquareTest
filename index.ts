@@ -1,12 +1,13 @@
 import { InstructionsIterator } from "./instructionsIterator";
 import { Lawn } from "./lawn";
 import { Mower } from "./mower";
-import { NextDirection } from "./NextDirection";
+import { Direction } from "./direction";
+
 import { OrientationParser } from "./orientationParser";
 const fs = require('fs')
 
 const lawn = new Lawn();
-const mower = new Mower(lawn,new NextDirection(),new OrientationParser());
+const mower = new Mower(lawn,new Direction(),new OrientationParser());
 
 
 const inputFileLog = fs.readFileSync('input.txt', 'utf8');
